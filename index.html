@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDB Movie Search Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        1. Setting up the project (done)
+        UI=>
+        2. Adding input fields (done)
+        3. Custom spinning loader (done)
+        4. Results section(done)
+        5. Error section (done)
+        JS=>
+        6. handle input (done)
+        7. fetch Data and setup the API key
+        8. Display loader
+        9. Handling the response
+        10.Handling errors
+        =>UI after functionality
+        11. Matching the figma
+        => Deployement
+     -->
+     <h1 id="header">IMDB MOVIE APP</h1>
+     <div class="search-section">
+        <input type="text" id="apiKey" placeholder="API_KEY">
+        <br>
+        <input type="text" id="movieTitle" placeholder="Search">
+        <br>
+        <button id="search-btn">Search</button>
+     </div>
+     <div class="loader-section">
+
+         <div class="loader" id="loader"></div>
+        </div>
+     <div id="error-message"></div>
+     <div id="results"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
